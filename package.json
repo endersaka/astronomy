@@ -1,0 +1,39 @@
+{
+  "name": "astronomy",
+  "version": "1.0.0",
+  "description": "Testing and Plotting astronomical formulas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Astronomy",
+    "Astrophisics",
+    "Plotting"
+  ],
+  "author": "Marco Frisan <ender.saka@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.0",
+    "exorcist": "^1.0.1"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "@babel/preset-env"
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "d3": "^3.5.17",
+    "function-plot": "^1.19.1"
+  }
+}
